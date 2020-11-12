@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- 簡単なアンケートの HTML -->
+ 
+<html lang="ja">
+ <head>
+  <title> 占い </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ </head>
+ <body>
+  <h1>占い</h1>
+  <p> 次の質問に答えてください．</p>
+  <form action="./kadai-cgi.cgi" method="post">
+   <dl>
+    <dt>お名前</dt>
+    <dd><input type="text" name="name" value=""></dd>
+    <dt>誕生日</dt>
+    <dd>
+      <input type="text" size="2" name="month" value="">月 
+      <input type="text" size="2" name="date" value="">日
+    </dd>
+    <dt>血液型</dt>
+    <dd>
+      A 型<input name="bt" value="A" type="radio">
+      B 型<input name="bt" value="B" type="radio"> 
+      O 型<input name="bt" value="O" type="radio">
+      AB 型<input name="bt" value="AB" type="radio">
+      不明/分からない<input name="bt" value="N" type="radio"> 
+     </dd>
+   </dl>
+   <p>
+    <input type="submit" name="send" value="送信">
+    <input type="reset" value="リセット">
+   </p>
+  </form>
+ </body>
+</html>
